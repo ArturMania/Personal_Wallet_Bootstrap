@@ -1,0 +1,24 @@
+/*Stylizacja body*/
+body{
+	background-image: url("background/y-so-serious-white.png");
+	/*	pipes.png -
+		topography.png +/-
+		what-the-hex.png +/-
+		y-so-serious-white.png +
+		concrete_seamless.png  + */
+	/* Background pattern from Toptal Subtle Patterns */
+	font-family: 'Raleway', sans-serif;
+	color: #595959;
+	font-size: 1.7rem;
+	text-align:center;
+	padding: 1rem;
+}
+
+h1{
+	text-transform: uppercase;
+	font-style: bold;
+}
+
+.motto{
+	font-style: italic;
+}

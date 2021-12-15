@@ -9,7 +9,7 @@ body{
 	/* Background pattern from Toptal Subtle Patterns */
 	font-family: 'Raleway', sans-serif;
 	color: #595959;
-	font-size: 1.7rem;
+	font-size: 1.2rem;
 	text-align:center;
 	padding: 1rem;
 }
@@ -19,6 +19,43 @@ h1{
 	font-style: bold;
 }
 
-.motto{
-	font-style: italic;
+.head{
+	margin-top:45px;
+	border-top: 2px solid #008000;
+	border-bottom: 2px solid #008000;
+	width: 100%;
+}
+
+/*-----Navbar--------*/
+
+.nav-item{
+	border-right: 1px solid #595959;
+	text-align:center;
+	padding-right:1rem;
+	padding-left:1rem;
+}
+
+.nav-item:first-child{
+	border-left: 1px solid #595959;
+}
+
+.bi{
+
+	font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+	
+	.nav-item{
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid #595959;
+		padding-top: 1.3rem;
+		padding-bottom: 1.3rem;
+	}
+	
+	.nav-item:first-child{
+		border-left: none;
+		border-top: 1px solid #595959;
+	}
 }

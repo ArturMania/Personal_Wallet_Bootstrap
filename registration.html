@@ -15,7 +15,7 @@
 <!--FONTAWESOME-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-    <title>Personal Wallet - Strona Główna</title>
+    <title>Personal Wallet - Rejestracja</title>
 	
   </head>
   
@@ -70,18 +70,61 @@
 	</header>
 	
 
-	<div class="head container">
-		<header class>
-			<h1 class="mt-2">Personal Wallet</h1>
-			<p class="motto fst-italic fs-3 mb-2">Oszczędzaj z głową!</p>
-		</header>
-	</div>
+		<div class="head container ">
+			<header class>
+				<h1 class="mt-2">Personal Wallet</h1>
+				<p class="motto fst-italic fs-3 mb-2">Oszczędzaj z głową!</p>
+			</header>
+		</div>
 
+		
+		
+	<div class="container text-start">	
+		<main>
+			<div class="registration row ms-auto me-auto mt-5 pt-5 col-8 offset-2 ">
+						
+				<h2 class="text-center">Rejestracja</h2>
+				
+					<form action="/action_page.php">
+					
+						<div class="mb-3 mt-3 ms-3 me-3">
+							<label for="name" class="form-label text-start">Podaj imię:</label>
+							<input type="name" class="form-control" id="name" placeholder="imię" name="name">
+						</div>
+					
+						<div class="mb-3 mt-3 ms-3 me-3">
+							<label for="email" class="form-label text-start">Podaj adres email:</label>
+							<input type="email" class="form-control" id="email" placeholder="email" name="email">
+						</div>
+						
+						<div class="mb-3 ms-3 me-3">
+							<label for="pwd" class="form-label">Wprowadź hasło:</label>
+							<input type="password" class="form-control" id="pwd" placeholder="hasło" name="pswd">
+						</div>
+						
+						<div class="form-check mb-3 ms-3 me-3">
+							<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="remember"> Zapamiętaj mnie
+							</label>
+						</div>
+						
+						<div class="form-check mb-3 text-center ">
+							<button type="submit" class="btn btn-lg btn-success">Załóż konto</button>
+						</div>
+						
+						<div class="form-check mb-3 text-center">
+							<a class="nav-link text-center text-success" href="#">Wróć do logowania</a>
+						</div>
+					</form> 
+				
+			</div>
+		</main>		
+	</div>
 	
-	<footer id="footer" class="bg-success text-light mt-5 ">
+	<footer id="footer" class="bg-success text-light mt-5">
         <p class="py-3 px-3 mb-0 text-center"> Wszelkie prawa zastrzeżone &copy; 2021 Personal Wallet</p>
     </footer>
-	
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   </body>

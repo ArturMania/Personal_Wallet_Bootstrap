@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- CSS-->
+	<link href="style.css" rel="stylesheet">
+<!--GOOGLE FONTS-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"> 
+<!--FONTAWESOME-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <title>Personal Wallet - Dodaj Wydatek</title>
+	
+  </head>
+  
+  <body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ms-auto me-auto">
+		  <div class="container-fluid">
+		  
+			<a class="navbar-brand " href="#"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door-fill pe-1"></i>Strona Główna</a>
+				</li>
+				
+				<li class="nav-item">
+				  <a class="nav-link" href="#"><i class="bi bi-plus-lg pe-1"></i>Dodaj Przychód</a>
+				</li>
+				
+				<li class="nav-item">
+				  <a class="nav-link" href="#"><i class="bi bi-dash-lg pe-1"></i>Dodaj Wydatek</a>
+				</li>
+				
+				<li class="nav-item">
+				  <a class="nav-link" href="#"><i class="bi bi-plus-slash-minus pe-1"></i>Twój Bilans</a>
+				</li>
+				
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<i class="bi bi-gear-fill pe-1"></i>Ustawienia
+				  </a>
+				  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="#">Edytuj Dane</a></li>
+					<li><a class="dropdown-item" href="#">Edytuj Kategorie</a></li>
+					<li><a class="dropdown-item" href="#">Usuń Wpis</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item">
+				  <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"><i class="bi bi-box-arrow-right pe-1"></i>Wyloguj się</a>
+				</li>
+				
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		
+	</header>
+	
+
+		<div class="head container mw-100 ">
+			<header class>
+				<h1 class="mt-2">Personal Wallet</h1>
+				<p class="motto fst-italic fs-3 mb-2">Oszczędzaj z głową!</p>
+			</header>
+		</div>
+
+		
+		
+	<div class="container text-start">	
+		<main>
+			<div class="registration row text-start ms-auto me-auto mt-5 pt-4 col-10 col-md-6 offset-lg-2">
+						
+				<h2 class="text-center ">Arkusz Wydatku</h2>
+				<form action="/action_page.php ">
+				
+					<div class="mb-3 mt-3 ms-3 me-3 col-8 col-md-10">
+						<label for="outcomeCash" class="form-label">Wartość:</label>
+						<input type="number" class="form-control ms-4" id="outcomeCash" name="cash" step="0.01" min="0.01" required>
+					</div>
+					
+					<div class="mb-3 mt-3 ms-3 me-3 col-8 col-md-10 ">
+						<label for="outcomeDate" class="form-label">Data:</label>
+						<input type="date" class="form-control ms-4" id="outcomeDate" name="enteredDate" required>
+					</div>
+					
+                    <div class="container text-start">
+						<fieldset class="row mb-3">
+							<legend class="col-form-label ps-0"> <span class>Kategoria </span></legend>
+							
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="food" value="out-1" checked>
+									<label class="form-check-label" for="food"> Jedzenie </label>
+								</div>
+							</div>
+							
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="accomodation" value="out-2">
+									<label class="form-check-label" for="accomodation"> Mieszkanie </label>
+								</div>
+							</div>
+							
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="car" value="out-3">
+									<label class="form-check-label" for="car"> Transport </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="phone" value="out-4">
+									<label class="form-check-label" for="reward"> Telekomunikacja </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="health" value="out-5">
+									<label class="form-check-label" for="health"> Opieka Zdrowotna </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="clothes" value="out-6">
+									<label class="form-check-label" for="clothes"> Ubrania </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="hygiene" value="out-7">
+									<label class="form-check-label" for="hygiene"> Higiena </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="kids" value="out-8">
+									<label class="form-check-label" for="kids"> Dzieci </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="entertainment" value="out-9">
+									<label class="form-check-label" for="entertainment"> Rozrywka </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="trips" value="out-10">
+									<label class="form-check-label" for="trips"> Wycieczki </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="trainings" value="out-11">
+									<label class="form-check-label" for="trainings"> Szkolenia </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="books" value="out-12">
+									<label class="form-check-label" for="books"> Książki </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="savings" value="out-13">
+									<label class="form-check-label" for="savings"> Oszczędności </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="retirement" value="out-14">
+									<label class="form-check-label" for="retirement"> Emerytura </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="debs" value="out-15">
+									<label class="form-check-label" for="debs"> Długi </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="charity" value="out-16">
+									<label class="form-check-label" for="charity"> Darowizny </label>
+								</div>
+							</div>
+							<div class="col-12 ">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="others" value="out-17">
+									<label class="form-check-label" for="others"> Inne </label>
+								</div>
+							</div>
+	
+							<div class="form-floating mb-3 col-12 col-md-6">
+                                <textarea class="form-control" id="floatingTextarea" name="incomeType"></textarea>
+                                <label for=" floatingTextarea"></label>
+							</div>
+							
+							
+						</fieldset>			
+					</div>
+
+					<div class="form-check mb-3 mx-auto text-center px-0">
+						<button type="submit" class="btn btn-lg btn-success col-md-3 me-1">Dodaj</button>
+						<button type="submit" class="btn btn-lg btn-danger col-md-3 ms-1">Anuluj</button>
+					</div>
+				</form>
+			</div>	
+		</main>
+	</div>		
+
+	
+	<footer id="footer" class="bg-success text-light mt-5 text-center">
+        <p class="py-3 px-3 mb-0"> Wszelkie prawa zastrzeżone &copy; 2021 Personal Wallet</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>

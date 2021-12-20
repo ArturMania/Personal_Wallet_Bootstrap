@@ -81,15 +81,148 @@
 		
 	<div class="container text-start">	
 		<main>
-			<div class="registration row ms-auto me-auto mt-5 pt-5 col-lg-6 offset-lg-2">
+			<div class="registration row text-start ms-auto me-auto mt-5 pt-4 col-10 col-md-6 offset-lg-2">
 						
-				<h2 class="text-center ">Rejestracja</h2>
+				<h2 class="text-center ">Arkusz Wydatku</h2>
+				<form action="/action_page.php ">
 				
+					<div class="mb-3 mt-3 ms-3 me-3 col-8 col-md-10">
+						<label for="outcomeCash" class="form-label">Wartość:</label>
+						<input type="number" class="form-control ms-4" id="outcomeCash" name="cash" step="0.01" min="0.01" required>
+					</div>
 					
-				
-			</div>
-		</main>		
-	</div>
+					<div class="mb-3 mt-3 ms-3 me-3 col-8 col-md-10 ">
+						<label for="outcomeDate" class="form-label">Data:</label>
+						<input type="date" class="form-control ms-4" id="outcomeDate" name="enteredDate" required>
+					</div>
+					
+                    <div class="container text-start">
+						<fieldset class="row mb-3">
+							<legend class="col-form-label ps-0"> <span class>Kategoria </span></legend>
+							
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="food" value="out-1" checked>
+									<label class="form-check-label" for="food"> Jedzenie </label>
+								</div>
+							</div>
+							
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="accomodation" value="out-2">
+									<label class="form-check-label" for="accomodation"> Mieszkanie </label>
+								</div>
+							</div>
+							
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="car" value="out-3">
+									<label class="form-check-label" for="car"> Transport </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="phone" value="out-4">
+									<label class="form-check-label" for="reward"> Telekomunikacja </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="health" value="out-5">
+									<label class="form-check-label" for="health"> Opieka Zdrowotna </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="clothes" value="out-6">
+									<label class="form-check-label" for="clothes"> Ubrania </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="hygiene" value="out-7">
+									<label class="form-check-label" for="hygiene"> Higiena </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="kids" value="out-8">
+									<label class="form-check-label" for="kids"> Dzieci </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="entertainment" value="out-9">
+									<label class="form-check-label" for="entertainment"> Rozrywka </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="trips" value="out-10">
+									<label class="form-check-label" for="trips"> Wycieczki </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="trainings" value="out-11">
+									<label class="form-check-label" for="trainings"> Szkolenia </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="books" value="out-12">
+									<label class="form-check-label" for="books"> Książki </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="savings" value="out-13">
+									<label class="form-check-label" for="savings"> Oszczędności </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="retirement" value="out-14">
+									<label class="form-check-label" for="retirement"> Emerytura </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="debs" value="out-15">
+									<label class="form-check-label" for="debs"> Długi </label>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="charity" value="out-16">
+									<label class="form-check-label" for="charity"> Darowizny </label>
+								</div>
+							</div>
+							<div class="col-12 ">
+								<div class="form-check fs-6">
+									<input class="form-check-input" type="radio" name="categ" id="others" value="out-17">
+									<label class="form-check-label" for="others"> Inne </label>
+								</div>
+							</div>
+	
+							<div class="form-floating mb-3 col-12 col-md-6">
+                                <textarea class="form-control" id="floatingTextarea" name="incomeType"></textarea>
+                                <label for=" floatingTextarea"></label>
+							</div>
+							
+							
+						</fieldset>			
+					</div>
+
+					<div class="form-check mb-3 mx-auto text-center px-0">
+						<button type="submit" class="btn btn-lg btn-success col-md-3 me-1">Dodaj</button>
+						<button type="submit" class="btn btn-lg btn-danger col-md-3 ms-1">Anuluj</button>
+					</div>
+				</form>
+			</div>	
+		</main>
+	</div>		
+
 	
 	<footer id="footer" class="bg-success text-light mt-5 text-center">
         <p class="py-3 px-3 mb-0"> Wszelkie prawa zastrzeżone &copy; 2021 Personal Wallet</p>

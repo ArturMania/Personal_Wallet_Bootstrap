@@ -43,6 +43,15 @@ h1{
 	font-size: 20px;
 }
 
+/*---Containery---*/
+
+.registration{
+	background-color: #f2f2f2;
+	border-radius: 20px;
+	border-bottom: 2px solid #595959;
+}
+
+
 /*---Footer-----*/
 
 #footer {
@@ -52,12 +61,7 @@ h1{
     bottom: 0;
 }
 
-/*---Containery---*/
-.registration{
-	background-color: #f2f2f2;
-	border-radius: 10px;
-	border-bottom: 2px solid #595959;
-}
+
 
 
 @media (max-width: 1000px) {
